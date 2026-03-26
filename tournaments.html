@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Follow The Lacrosse – Tournaments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <!-- Import brand fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Follow The Lacrosse</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="tournaments.html">Tournaments</a></li>
+          <li><a href="interviews.html">Interviews</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="tournament-header-section">
+    <h2>Tournaments</h2>
+    <p>Discover upcoming lacrosse tournaments across Europe. Find events, dates, locations, and registration information.</p>
+  </section>
+  <nav class="subnav">
+    <div class="filters">
+      <!-- Filter buttons now include data attributes for JS filtering -->
+      <button class="filter-button active" data-format="field">Field</button>
+      <button class="filter-button" data-format="sixes">Sixes</button>
+      <button class="filter-button" data-format="box">Box</button>
+      <span style="margin-left:1rem;color:#7A90A8;">|</span>
+      <select id="country-filter">
+        <option value="all">All Countries</option>
+        <option value="Germany">Germany</option>
+        <option value="France">France</option>
+        <option value="United Kingdom">United Kingdom</option>
+      </select>
+    </div>
+  </nav>
+  <div class="sections">
+    <div class="tournament-grid">
+      <!-- Tournament Card 1 -->
+      <div class="tournament-card" data-format="field" data-country="Germany">
+        <div class="tournament-header">
+          <div class="trophy">🏆</div>
+          <div class="overlay"></div>
+        </div>
+        <div class="tournament-content">
+          <span class="tournament-badge field">Field</span>
+          <h3 class="tournament-title">Berlin Cup 2026</h3>
+          <div class="tournament-info">
+            <div class="tournament-info-item"><span class="icon">📍</span> Berlin, Germany</div>
+            <div class="tournament-info-item"><span class="icon">📅</span> 12–14 May 2026</div>
+            <div class="tournament-info-item"><span class="icon">👥</span> 8 teams</div>
+          </div>
+          <a class="view-details" href="tournament-detail.html">View Details →</a>
+        </div>
+      </div>
+      <!-- Tournament Card 2 -->
+      <div class="tournament-card" data-format="box" data-country="France">
+        <div class="tournament-header">
+          <div class="trophy">🏆</div>
+          <div class="overlay"></div>
+        </div>
+        <div class="tournament-content">
+          <span class="tournament-badge box">Box</span>
+          <h3 class="tournament-title">Paris Box Showdown</h3>
+          <div class="tournament-info">
+            <div class="tournament-info-item"><span class="icon">📍</span> Paris, France</div>
+            <div class="tournament-info-item"><span class="icon">📅</span> 27–28 May 2026</div>
+            <div class="tournament-info-item"><span class="icon">👥</span> 6 teams</div>
+          </div>
+          <a class="view-details" href="tournament-detail.html">View Details →</a>
+        </div>
+      </div>
+      <!-- Tournament Card 3 -->
+      <div class="tournament-card" data-format="sixes" data-country="United Kingdom">
+        <div class="tournament-header">
+          <div class="trophy">🏆</div>
+          <div class="overlay"></div>
+        </div>
+        <div class="tournament-content">
+          <span class="tournament-badge sixes">Sixes</span>
+          <h3 class="tournament-title">European Sixes Invitational</h3>
+          <div class="tournament-info">
+            <div class="tournament-info-item"><span class="icon">📍</span> London, UK</div>
+            <div class="tournament-info-item"><span class="icon">📅</span> 3–5 June 2026</div>
+            <div class="tournament-info-item"><span class="icon">👥</span> 10 teams</div>
+          </div>
+          <a class="view-details" href="tournament-detail.html">View Details →</a>
+        </div>
+      </div>
+      <!-- Additional cards for demonstration -->
+      <div class="tournament-card" data-format="field" data-country="Czechia">
+        <div class="tournament-header">
+          <div class="trophy">🏆</div>
+          <div class="overlay"></div>
+        </div>
+        <div class="tournament-content">
+          <span class="tournament-badge field">Field</span>
+          <h3 class="tournament-title">Prague Spring Classic</h3>
+          <div class="tournament-info">
+            <div class="tournament-info-item"><span class="icon">📍</span> Prague, Czechia</div>
+            <div class="tournament-info-item"><span class="icon">📅</span> 15–17 July 2026</div>
+            <div class="tournament-info-item"><span class="icon">👥</span> 12 teams</div>
+          </div>
+          <a class="view-details" href="tournament-detail.html">View Details →</a>
+        </div>
+      </div>
+      <div class="tournament-card" data-format="box" data-country="Italy">
+        <div class="tournament-header">
+          <div class="trophy">🏆</div>
+          <div class="overlay"></div>
+        </div>
+        <div class="tournament-content">
+          <span class="tournament-badge box">Box</span>
+          <h3 class="tournament-title">Rome Box Masters</h3>
+          <div class="tournament-info">
+            <div class="tournament-info-item"><span class="icon">📍</span> Rome, Italy</div>
+            <div class="tournament-info-item"><span class="icon">📅</span> 20–22 Aug 2026</div>
+            <div class="tournament-info-item"><span class="icon">👥</span> 8 teams</div>
+          </div>
+          <a class="view-details" href="tournament-detail.html">View Details →</a>
+        </div>
+      </div>
+      <div class="tournament-card" data-format="sixes" data-country="Netherlands">
+        <div class="tournament-header">
+          <div class="trophy">🏆</div>
+          <div class="overlay"></div>
+        </div>
+        <div class="tournament-content">
+          <span class="tournament-badge sixes">Sixes</span>
+          <h3 class="tournament-title">Amsterdam Sixes Challenge</h3>
+          <div class="tournament-info">
+            <div class="tournament-info-item"><span class="icon">📍</span> Amsterdam, Netherlands</div>
+            <div class="tournament-info-item"><span class="icon">📅</span> 5–7 Sep 2026</div>
+            <div class="tournament-info-item"><span class="icon">👥</span> 10 teams</div>
+          </div>
+          <a class="view-details" href="tournament-detail.html">View Details →</a>
+        </div>
+      </div>
+    </div>
+    <div class="past-results">
+      <h3>Past Results</h3>
+      <ul class="past-list">
+        <li><span class="flag">🇩🇪</span> Berlin Cup 2025 – 10–12 May 2025</li>
+        <li><span class="flag">🇫🇷</span> Paris Box Showdown 2025 – 27–28 May 2025</li>
+        <li><span class="flag">🇬🇧</span> European Sixes 2025 – 3–5 June 2025</li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div>
+        <h4>About</h4>
+        <p>Follow The Lacrosse is the central hub for everything related to lacrosse in Europe.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="interviews.html">Interviews</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" aria-label="Email address">
+          <button type="button">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <!-- Simple filtering script for tournament cards -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const filterButtons = document.querySelectorAll('.filter-button');
+      const countrySelect = document.getElementById('country-filter');
+      const cards = document.querySelectorAll('.tournament-card');
+
+      function filterCards() {
+        const activeButton = document.querySelector('.filter-button.active');
+        const selectedFormat = activeButton ? activeButton.getAttribute('data-format') : 'field';
+        const selectedCountry = countrySelect ? countrySelect.value : 'all';
+        cards.forEach(card => {
+          const cardFormat = card.getAttribute('data-format');
+          const cardCountry = card.getAttribute('data-country');
+          const matchesFormat = selectedFormat === 'all' || cardFormat === selectedFormat;
+          const matchesCountry = selectedCountry === 'all' || cardCountry === selectedCountry;
+          if (matchesFormat && matchesCountry) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', function () {
+          filterButtons.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          filterCards();
+        });
+      });
+      if (countrySelect) {
+        countrySelect.addEventListener('change', filterCards);
+      }
+      // initial filter
+      filterCards();
+    });
+  </script>
+</body>
+</html>
